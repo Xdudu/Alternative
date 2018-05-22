@@ -1,0 +1,30 @@
+{
+  "name": "Alternative",
+  "version": "0.0.1",
+  "description": "Alternative components for React, with animation",
+  "main": "index.js",
+  "author": "Xdudu",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-react-css-modules": "^3.4.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "gh-pages": "^1.1.0",
+    "nested": "^0.0.1-pre2",
+    "parcel-bundler": "^1.6.2",
+    "postcss-modules": "^1.1.0",
+    "postcss-nested": "^3.0.0"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "scripts": {
+    "test": "parcel test/index.html",
+    "gh:build": "parcel build test/index.js",
+    "gh:publish": "yarn run gh:build && gh-pages -d dist"
+  }
+}

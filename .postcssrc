@@ -1,0 +1,10 @@
+{
+  "modules": true,
+  "plugins": {
+    "autoprefixer": true,
+    "postcss-nested": {},
+    "postcss-modules": {
+      "generateScopedName": "[local]___[hash:base64:5]"
+    }
+  }
+}

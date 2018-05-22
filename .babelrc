@@ -1,0 +1,17 @@
+{
+  "presets": [
+    "env",
+    "react",
+    "stage-2"
+  ],
+  "plugins": [
+    [
+      "react-css-modules",
+      {
+        "handleMissingStyleName": "ignore",
+        "generateScopedName": "[local]___[hash:base64:5]"
+      }
+    ],
+    "transform-class-properties"
+  ]
+}
