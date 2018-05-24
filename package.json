@@ -1,10 +1,18 @@
 {
-  "name": "Alternative",
+  "name": "alternative-react-components",
   "version": "0.0.1",
-  "description": "Alternative components for React, with animation",
-  "main": "index.js",
+  "description": "Alternative components for React, with fun animations",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "author": "Xdudu",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/Xdudu/Alternative",
+    "type": "git"
+  },
+  "homepage": "https://xdudu.github.io/Alternative/",
   "devDependencies": {
     "autoprefixer": "^8.2.0",
     "babel-cli": "^6.26.0",
@@ -24,7 +32,8 @@
   },
   "scripts": {
     "test": "parcel test/index.html",
-    "gh:build": "parcel build test/index.js",
-    "gh:publish": "yarn run gh:build && gh-pages -d dist"
+    "gh:build": "rm -rf dist && parcel build test/index.js --no-minify",
+    "gh:publish": "yarn run gh:build && gh-pages -d dist",
+    "build": "rm -rf lib && parcel build src/index.js -d lib --no-source-maps"
   }
 }
